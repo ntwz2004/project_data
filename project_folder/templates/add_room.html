@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}เพิ่มห้องเรียน{% endblock %}
+
+{% block content %}
+    <div class="form-container">
+        <h1>เพิ่มห้องเรียน</h1>
+        <form method="POST">
+            <label for="room_id">หมายเลขห้อง:</label>
+            <input type="number" id="room_id" name="room_id" required>
+
+            <label for="capacity">ความจุห้อง:</label>
+            <input type="number" id="capacity" name="capacity" required>
+
+            <button type="submit">เพิ่มห้องเรียน</button>
+        </form>
+    </div>
+{% endblock %}

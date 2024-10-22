@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ระบบจัดการห้องเรียน{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="{{ url_for('index') }}">
+                <img src="https://bit.ly/4haV4nH" alt="กลับไปหน้าแรก">
+            </a>
+        </div>
+        <h1>Classroom Scheduling</h1>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>เมนู</h2>
+            <ul>
+                <li><a href="{{ url_for('add_room') }}">เพิ่มห้องเรียน</a></li>
+                <li><a href="{{ url_for('book_room') }}">จองห้องเรียน</a></li>
+                <li><a href="{{ url_for('check_availability') }}">ตรวจสอบห้องว่าง</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</body>
+</html>

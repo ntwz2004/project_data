@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #00ff2f;
+    height: 100px; /* เพิ่มความสูงของ navbar */
+    display: flex;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    justify-content: space-between;
+    padding: 0 20px; /* ระยะห่างด้านใน */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเล็กน้อย */
+}
+
+.navbar .logo {
+    display: flex; /* จัดวางรูปภาพและข้อความให้อยู่ในบรรทัดเดียวกัน */
+    align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+   
+}
+
+.logo img {
+    height: 100px; /* ปรับขนาดความสูงตามที่ต้องการ */
+    width: auto; /* ปรับความกว้างตามสัดส่วนของภาพ */
+    margin-right: 30px; /* ระยะห่างระหว่างโลโก้กับเนื้อหาอื่น */
+}
+
+.navbar h1 {
+    font-size: 24px; /* ขนาดตัวอักษรของชื่อเว็บไซต์ */
+    color: white;
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    margin: 40px 20px; /* เพิ่มระยะห่างด้านบนและด้านข้าง */
+}
+
+.sidebar {
+    width: 200px; /* เพิ่มความกว้าง */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-right: 20px; /* เพิ่มระยะห่างระหว่าง sidebar และ content */
+}
+
+.sidebar h2 {
+    color: #333;
+    font-size: 18px; /* เพิ่มขนาดตัวอักษร */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0; /* เพิ่มระยะห่างระหว่างรายการ */
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #28a745;
+    font-size: 16px; /* เพิ่มขนาดตัวอักษร */
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    padding: 30px; /* เพิ่ม padding ให้กว้างขึ้น */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: 400px; /* เพิ่มความสูงขั้นต่ำ */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="number"], input[type="date"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* เพิ่ม padding ให้ปุ่มใหญ่ขึ้น */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin-top: 40px; /* เพิ่มระยะห่างด้านบน */
+    border-top: 1px solid #ccc;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* แก้ไขการจัดวางให้อยู่ด้านบนสุด */
+    min-height: 80vh; /* ให้ container สูงประมาณ 80% ของหน้าจอ */
+}
+
+.welcome-message {
+    font-size: 1.5em;
+}
+
